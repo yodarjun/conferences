@@ -1,4 +1,4 @@
-# rspec -d -f documentation ctap_poll.rb
+# rspec -d -f documentation mattwynn.rb
 require 'rspec'
 
 describe "Hexagonal Rails" do

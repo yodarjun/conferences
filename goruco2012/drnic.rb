@@ -1,4 +1,4 @@
-# rspec -d -f documentation ctap_poll.rb
+# rspec -d -f documentation drnic.rb
 require 'rspec'
 
 describe "Deployment of the future" do
