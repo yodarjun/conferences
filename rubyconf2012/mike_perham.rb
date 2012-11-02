@@ -2,6 +2,7 @@ require 'rspec'
 
 # @mperham
 # mperham@gmail.com
+# https://github.com/mperham/sidekiq
 describe "Async processing for fun and profit" do
   describe "how to do async calls" do
     it "async(Class, :method, args)"
