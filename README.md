@@ -1,4 +1,6 @@
 conferences
 ===========
 
-rspec -f documentation <talk>
+```ruby
+  rspec -f documentation <talk>
+```
