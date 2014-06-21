@@ -1,0 +1,51 @@
+Future of ruby performance tooling
+@ag
+
+- "Introspectability"
+- API to better instrospect ruby applications
+
+- ActiveSupport::Notifications
+  - Good for graphs
+  - Good for trending data, what layers are slow
+  - Not good for details
+
+- Rblineprof(https://github.com/tmm1/rblineprof)
+  - great with Ruby > 2.0
+  - NOT FOR PRODUCTION ENV (best run in staging)
+  - relative numbers as output
+  - great visibility into dev hotspots to figure out which line is slow
+  - Good for diving deep into code
+
+- PPprofiler
+  - tracks local improvements
+  - Add on to other profilers
+  - NOT FOR PRODUCTION
+
+- StackProf
+  - samples the stack at different intervals of time
+  - can be run in production
+  - readable results when used with graphs
+  - good for finding issues in production
+  - not good for detailed info about what part is slow in code
+
+- StackProf-Remote
+  - written in GO
+  - hits the production server, starts up the profiler and returns a dump of the profile
+  - addon to other profilers
+
+- ObjectSpace
+  - new tools for ruby 2.1
+  - object.dump_all
+  - returns a dump of every object in your heap
+  - great for identifying memory leaks
+  - slow because it halts execution while the dump is being done
+  - ahrd to fetch from running systems
+
+- ObjectViewer
+  - a view of the ObjectSpace
+  - wip
+
+-- MemoryProfiler
+
+- Use low impact tools to collect data from production
+- Use high impact tools to measure relative improvements in dev and staging

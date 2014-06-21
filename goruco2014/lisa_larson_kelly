@@ -1,0 +1,22 @@
+Realtime communication on the web
+@lisamarienyc
+
+- WebRTC (http://www.webrtc.org/)
+- appear.in/lisa
+- machine-machine comm(chromecast)
+- web-web comm
+- doesn't work in IE or safari
+- iswebrtcreadyyet.com
+- http://www.w3.org/communicty/ortc
+- webrtchacks.com, http://webrtchacks.com/sdp-anatomy/
+- APIs:
+  - MedisStream
+    -- great for video streaming across multiple clients
+  - RTCDataChannel
+    -- great for multiplater games and text chat
+    -- cubeslam.com
+  - RTCPeerConnection
+- Resources:
+  - https://github.com/palavatv/palava-machine
+  - SimpleWebRTC
+  - bit.ly/lisa-rtc
