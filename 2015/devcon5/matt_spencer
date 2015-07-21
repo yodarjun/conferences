@@ -1,0 +1,15 @@
+Matt Spenceer
+ARM Mali Ecosystem
+
+- Can do compelling interfaces in HTML instead of native
+- Different form factors make it difficult to build once and ship multiple
+- No standard for 2D acceleration
+- TyGL https://github.com/szeged/TyGL
+  * xperimental 3D rendering backend for WebKit
+- Skia Ganesh: used in blink engine and used by Chrome, Firefox, Opera, Android
+  * uses the GLES API defined by Khronos
+  * https://code.google.com/p/skia/w/list
+  * enables 2D painting with GPU
+- Web app over native app to take advantage of the browser engine improvements
+- Painting a page takes time
+- http://www.chromium.org/blink/slimming-paint

@@ -1,0 +1,16 @@
+Tiago Garcia
+Design patterns in JS
+
+Facade
+  - Abstract functionality for external api communications to give a simple api for usage in your app
+Modules
+  - global and fragile
+  - not scalable
+
+- addObserver
+
+Mediator/PubSub pattern
+
+ES7 Observable module
+
+http://tiagorg.com/talk-design-patterns-for-javascript-featuring-modules/#/
