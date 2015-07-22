@@ -1,0 +1,7 @@
+WebSocket
+- Websockets work over TCP
+- Constant connection instead of in-itme REST requests
+- User websockets over AJAX
+- http://demo.kaazing.com/forex/
+  * can handle large amount of requests with a smaller CPU
+

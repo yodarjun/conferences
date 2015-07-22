@@ -1,0 +1,61 @@
+Jafar Husain
+Tech Lead, architect of "Falcor", Netflix UI data platform
+@jhusain
+
+ES6 -> ES 2015
+Yearly release of ES
+ES 2015
+- Arrow functions
+- blocking calls is easy
+  * almost never done because js is single threaded
+  * wait to push instead of block to pull
+  * waiting leads to "Pyramid of Doom" because of callbacks
+- Solution: Promises
+- Even better: "yield functions"
+  * syntax similar to blocking functions
+  * with yield statements, you can do async programming within while loops without issues
+- Generator functions
+  * defined as "function*"
+  * a function that can return multiple values
+  * function* getNumbers => {
+      yield 42;
+      yield 30;
+      return 12;
+    }
+
+  * iterators:
+    > var iterator = getNumbers();
+    > console.log(iterator.next());
+    > { value: 42, done: false }
+    > console.log(iterator.next());
+    > { value: 30, done: false }
+    > console.log(iterator.next());
+    > { value: 12, done: true }
+  * eg fibonnacci sequences with "while true"
+  * made up of an iterator and an observer
+  * observers:
+    > generator.next("val");
+- asynchronous iteration pattern:
+  * task.js
+- for (var x of arr)
+- Observable interface
+  * nums().observer({
+      next(v) { console.log(v); },
+      return(v) { console.log("done:" + v); }
+      throw(e) { console.log("error:" + v); }
+    })
+
+ES 2016:
+- async function
+  * async function getSomething() {
+      while() {
+        await ("foo");
+      }
+    }
+- Symmetrical support for blocking and waiting
+- await keyword makes it easy to wait for one async value
+- should have a build step for your web app
+- typescript
+
+
+https://github.com/jhusain
