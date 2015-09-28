@@ -1,0 +1,14 @@
+@venkat_s
+https://www.agiledeveloper.com/
+
+* Karma
+* Mocha
+* Chai
+* Istanbul (for code coverage)
+* Karma-phantomjs-launcher / Karma-chrome-launcher
+* Angular-mocks (**)
+* Karma-clear-screen-reporter
+
+
+$httpBackend.expectGET("/tasks").respond(200, data);
+$httpBackend.flush();
